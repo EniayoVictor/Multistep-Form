@@ -1,0 +1,463 @@
+html{
+        width: 100%;
+        height: 100%;
+}
+
+body{
+        background: hsl(217, 100%, 97%);
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+}
+
+@font-face {
+        font-family: "ubuntu-bold";
+        src: url(../fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+        font-family: "ubuntu-medium";
+        src: url(../fonts/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+        font-family: "ubuntu-regular";
+        src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+.display-none{
+        display: none;
+}
+
+.display-block{
+        display: block;
+}
+
+.main-card{
+        width: 70%;
+        height: 80%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background: white;
+        border-radius: 18px;
+        box-sizing: border-box;
+        padding: 1%;
+        display: flex;
+        justify-content: space-between;
+}
+
+.main-card .form-steps{
+        width: 30%;
+        height: 100%;
+        background: url(../images/bg-sidebar-desktop.svg);
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(243, 100%, 62%);
+        border-radius: 18px;
+        box-sizing: border-box;
+        padding: 3%;
+}
+
+.form-steps .step-display{
+        width: 100%;
+        height: 70%;
+        box-sizing: border-box;
+        margin: 0;
+}
+
+.step-display .step{
+        display: flex;
+        width: 100%;
+        height: 15%;
+        margin-top: 4%;
+        align-items: center;
+}
+
+.step-display .step:hover{
+        color: hsl(213, 96%, 18%);
+        background: hsl(243, 100%, 62%);
+        cursor: pointer;
+}
+
+.step .step-number{
+        width: 30px;
+        height: 30px;
+        border: 1px solid hsl(217, 100%, 97%);
+        border-radius: 50%;
+        margin-left: 3%;
+}
+
+.step-number h4{
+        font-family: "ubuntu-bold";
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+        margin-bottom: 5%;
+        color: hsl(217, 100%, 97%);
+}
+
+.step .step-details{
+        width: 70%;
+        height: 100%;
+        margin-left: 2%;
+        font-family: "ubuntu-regular";
+        padding-left: 2%;
+        color: hsl(217, 100%, 97%);
+}
+
+.step-details h4{
+        margin-top: 0;
+        letter-spacing: 3px;
+}
+
+.step-details p{
+        margin-bottom: 0;
+}
+
+.main-card .info-form{
+        width: 68%;
+        height: 100%;
+        border-radius: 18px;
+        border: 2px solid hsl(217, 100%, 97%);
+        box-sizing: border-box;
+        padding: 1%;
+        padding-left: 3%;
+}
+
+.info-form h1{
+        font-family: "ubuntu-bold";
+        color: hsl(213, 96%, 18%);
+        margin-bottom: 0;
+        line-height: 180%;
+}
+
+.info-form p{
+        font-family: "ubuntu-regular";
+        font-size: 14px;
+        color: hsl(229, 15%, 72%);
+        margin-top: 0;
+        margin-bottom: 4%;
+}
+
+.info-form label{
+        display: block;
+        margin-bottom: 1%;
+        font-family: "ubuntu-regular";
+        font-size: 14px;
+        color: hsl(213, 96%, 18%);
+}
+
+.info-form .form-input{
+        width: 80%;
+        height: 35px;
+        display: block;
+        margin-bottom: 6%;
+        font-family: "ubuntu-regular";
+        font-size: 14px;
+        color: hsl(213, 96%, 18%);
+        padding: 1%;
+        padding-left: 2%;
+        border: 1px solid hsl(229, 15%, 72%);
+        border-radius: 14px;
+}
+
+.info-form .navigation-buttons{
+        width: 80%;
+        height: 8%;
+        margin-top: 7%;
+}
+
+.info-form .navigation-buttons .nav-button{
+        width: 30%;
+        height: 100%;
+        font-size: 14px;
+        font-family: "ubuntu-bold";
+        background: none;
+        color: hsl(229, 15%, 72%);
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        background-color: hsl(213, 96%, 18%);
+        float: right;
+}
+
+.info-form .navigation-buttons .nav-button:hover{
+        color: hsl(0, 0%, 100%);
+}
+
+.main-card .main-form{
+        width: 68%;
+        height: 100%;
+        border-radius: 18px;
+        border: 2px solid hsl(217, 100%, 97%);
+        box-sizing: border-box;
+        padding: 1%;
+        padding-left: 3%;
+}
+
+.main-card .main-form h1{
+        font-family: "ubuntu-bold";
+        color: hsl(213, 96%, 18%);
+        margin-bottom: 0;
+        line-height: 180%;
+}
+
+.main-card .main-form p{
+        font-family: "ubuntu-regular";
+        font-size: 14px;
+        color: hsl(229, 15%, 72%);
+        margin-top: 0;
+        margin-bottom: 4%;
+}
+
+.main-card .main-form .plans-card{
+        display: flex;
+        width: 80%;
+        height: 35%;
+        justify-content: space-between;
+        margin-bottom: 4%;
+}
+
+.plans-card .card{
+        width: 30%;
+        height: 100%;
+        border: 1px solid hsl(229, 15%, 72%);
+        border-radius: 18px;
+        box-sizing: border-box;
+        padding: 2%;
+}
+
+.card:hover{
+        background: hsl(217, 100%, 97%);
+        border: 1px solid hsl(213, 96%, 18%);
+}
+
+.card .avatar{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-top: 10%;
+}
+
+.card .icon-arcade{
+        background: url(../images/icon-arcade.svg);
+        background-size: contain;
+}
+
+.card .icon-advanced{
+        background: url(../images/icon-advanced.svg);
+        background-size: contain;
+}
+
+.card .icon-pro{
+        background: url(../images/icon-pro.svg);
+        background-size: contain;
+}
+
+.card h2{
+        font-family: "ubuntu-bold";
+        color: hsl(213, 96%, 18%);
+        margin-bottom: 0;
+        margin-top: 28%;
+        line-height: 150%;
+}
+
+.card p{
+        font-size: 11px;
+        margin-bottom: 0;
+}
+
+.main-form .plan-type{
+        width: 80%;
+        height: 10%;
+        background: hsl(217, 100%, 97%);
+        border-radius: 12px;
+        box-sizing: border-box;
+        padding: 2.5%;
+        display: flex;
+        text-align: center !important;
+        justify-content: center;
+}
+
+.plan-type h1{
+        font-size: 14px;
+        margin: 4%;
+        margin-top: -0.5%;
+}
+
+.switch {
+        position: relative;
+        display: inline-block;
+        width: 35px;
+        height: 18px;
+}
+      
+.switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+}
+      
+.slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: hsl(213, 96%, 18%);
+        -webkit-transition: .4s;
+        transition: .4s;
+}
+      
+.slider:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+}
+      
+input:checked + .slider {
+        background-color: hsl(213, 96%, 18%);
+}
+      
+input:focus + .slider {
+        box-shadow: 0 0 1px hsl(213, 96%, 18%);
+}
+      
+input:checked + .slider:before {
+        -webkit-transform: translateX(17px);
+        -ms-transform: translateX(17px);
+        transform: translateX(17px);
+}
+
+.slider.round {
+        border-radius: 34px;
+}
+      
+.slider.round:before {
+        border-radius: 50%;
+}
+
+.main-form .navigation-buttons{
+        width: 80%;
+        height: 8%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 17%;
+}
+
+.main-form .navigation-buttons .nav-button{
+        width: 30%;
+        height: 100%;
+        font-size: 14px;
+        font-family: "ubuntu-bold";
+        background: none;
+        color: hsl(229, 15%, 72%);
+        border: none;
+        outline: none;
+        border-radius: 12px;
+}
+
+.main-form .navigation-buttons .back-button:hover{
+        color: hsl(213, 96%, 18%);
+}
+
+.main-form .navigation-buttons .next-button{
+        background: hsl(213, 96%, 18%);
+}
+
+.main-form .navigation-buttons .next-button:hover{
+        background: hsl(243, 100%, 62%);
+        color: hsl(0, 0%, 100%);
+}
+
+.main-card .summary{
+        width: 68%;
+        height: 100%;
+        border-radius: 18px;
+        border: 2px solid hsl(217, 100%, 97%);
+        box-sizing: border-box;
+        padding: 1%;
+        padding-left: 3%;
+}
+
+.main-card .summary h1{
+        font-family: "ubuntu-bold";
+        color: hsl(213, 96%, 18%);
+        margin-bottom: 0;
+        line-height: 180%;
+}
+
+.main-card .summary p{
+        font-family: "ubuntu-regular";
+        font-size: 14px;
+        color: hsl(229, 15%, 72%);
+        margin-top: 0;
+        margin-bottom: 4%;
+}
+
+.summary .summary-charges{
+        width: 70%;
+        height: 35%;
+        background: hsl(217, 100%, 97%);
+        border-radius: 18px;
+}
+
+.main-plan{
+        display: flex;
+        width: 90%;
+        height: 50%;
+        margin: auto;
+        border-bottom: 1px solid hsl(229, 15%, 72%);
+        box-sizing: border-box;
+        padding: 1%;
+        padding-bottom: 0%;
+        align-items: center;
+}
+
+.main-plan .your-plan{
+        width: 80%;
+        height: 100%;
+        /* border: 1px solid red; */
+        padding-left: 5%;
+}
+
+.your-plan h3{
+        font-size: 17px;
+        color: hsl(213, 96%, 18%);
+        font-family: "ubuntu-bold";
+        margin-bottom: 1%;
+}
+
+.your-plan a{
+        color: hsl(229, 15%, 72%);
+        font-family: "ubuntu-regular";
+}
+
+.main-plan .your-plan-price{
+        width: 20%;
+        height: 100%;
+        /* border: 1px solid green; */
+        padding-right: 5%;
+}
+
+.your-plan-price h3{
+        font-size: 17px;
+        color: hsl(213, 96%, 18%);
+        font-family: "ubuntu-bold";
+}

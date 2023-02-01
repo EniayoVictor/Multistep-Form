@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="JS/script.js" defer></script>
+</head>
+<body>
+        <div class="main-card">
+                <div class="form-steps">
+                        <div class="step-display">
+                                <div class="step">
+                                        <div class="step-number">
+                                                <h4>1</h4>
+                                        </div>
+                                        <div class="step-details">
+                                                <p>STEP 1</p>
+                                                <h4> YOUR INFO </h4>
+                                        </div>
+                                </div>
+                                <div class="step">
+                                        <div class="step-number">
+                                                <h4>2</h4>
+                                        </div>
+                                        <div class="step-details">
+                                                <p>STEP 2</p>
+                                                <h4> SELECT PLANS </h4>
+                                        </div>
+
+                                </div>
+                                <div class="step">
+                                        <div class="step-number">
+                                                <h4>3</h4>
+                                        </div>
+                                        <div class="step-details">
+                                                <p>STEP 3</p>
+                                                <h4> ADD-ONS </h4>
+                                        </div>
+                                </div>
+                                <div class="step">
+                                        <div class="step-number">
+                                                <h4>4</h4>
+                                        </div>
+                                        <div class="step-details">
+                                                <p>STEP 4</p>
+                                                <h4> SUMMARY </h4>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="info-form display-none" id="info-form">
+                        <h1> Personal Info </h1>
+                        <p> Please provide your name, email address and phone number.</p>
+                        <form action="">
+                                <label for="full-name"> Name </label>
+                                <input type="text" name="full-name" class="form-input" placeholder="e.g. Stephen King">
+
+                                <label for="e-mail"> E-mail Address </label>
+                                <input type="email" name="e-mail" class="form-input" placeholder="e.g. stephenking@lorem.com">
+
+                                <label for="phone-number"> Phone Number </label>
+                                <input type="text" name="full-name" class="form-input" placeholder="e.g. +234801234567">
+                        </form>
+
+                        <div class="navigation-buttons">
+                                <button class="nav-button next-button" onclick="infochangeDisplay()"> Next Step </button>
+                        </div>
+                </div>
+
+                <div class="main-form display-none" id="main-form">
+                        <h1> Select your Plan</h1>
+                        <p> You have the option of monthly or yearly billing. </p>
+                        <div class="plans-card">
+                                <div class="card">
+                                        <div class="avatar icon-arcade"></div>
+                                        <h2> Arcade </h2>
+                                        <p>$9/mo</p>
+                                </div>
+                                <div class="card">
+                                        <div class="avatar icon-advanced"></div>
+                                        <h2> Advanced </h2>
+                                        <p>$12/mo</p>
+                                </div>
+                                <div class="card">
+                                        <div class="avatar icon-pro"></div>
+                                        <h2> Pro </h2>
+                                        <p>$15/mo</p>
+                                </div>
+                        </div>
+                        <div class="plan-type">
+                                <h1> Monthly </h1>
+                                <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                </label>
+                                <h1>Yearly</h1>
+                        </div>
+                        <div class="navigation-buttons">
+                                <button class="nav-button back-button"> Go Back </button>
+                                <button class="nav-button next-button" onclick="mainchangeDisplay()"> Next Step </button>
+                        </div>
+                </div>
+
+                <div class="add-ons display-none" id="add-ons">
+                       <h1> Pick add-ons </h1>
+                       <p> Add-ons help enhance your gaming experience. </p>
+                       <div class="add-ons-list">
+                                <div class="check">
+                                        <input type="checkbox" name="online-service" id="">
+                                </div>
+                                <div class="text">
+                                        <div class="text-content">
+                                                <h3>Online Services</h3>
+                                                <p>Access to multiplayer games</p>
+                                        </div>
+                                </div>
+                                <div class="price">
+                                        <p>+$1/mo</p>
+                                </div>
+                       </div>
+
+                       <div class="add-ons-list">
+                                <div class="check">
+                                        <input type="checkbox" name="online-service" id="">
+                                </div>
+                                <div class="text">
+                                        <div class="text-content">
+                                                <h3>Larger Storage</h3>
+                                                <p>Extra 1TB of cloud save</p>
+                                        </div>
+                                </div>
+                                <div class="price">
+                                        <p>+$2/mo</p>
+                                </div>
+                        </div>
+
+                        <div class="add-ons-list">
+                                <div class="check">
+                                        <input type="checkbox" name="online-service" id="">
+                                </div>
+                                <div class="text">
+                                        <div class="text-content">
+                                                <h3>Customisable Profile</h3>
+                                                <p>Custom theme on your profile</p>
+                                        </div>
+                                </div>
+                                <div class="price">
+                                        <p>+$2/mo</p>
+                                </div>
+                        </div>
+
+                        <div class="navigation-buttons">
+                                <button class="nav-button back-button"> Go Back </button>
+                                <button class="nav-button next-button"> Next Step </button>
+                        </div>                        
+                </div>
+
+                <div class="summary" id="summary">
+                        <h1> Finishing Up </h1>
+                        <p> Double-check everything looks OK before confirming. </p>
+
+                        <div class="summary-charges">
+                                <div class="main-plan">
+                                        <div class="your-plan">
+                                                <h3>Arcade (Yearly)</h3>
+                                                <a href="">Change</a>
+                                        </div>
+                                        <div class="your-plan-price">
+                                                <h3>$90/yr</h3>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</body>
+</html>
