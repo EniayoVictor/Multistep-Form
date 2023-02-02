@@ -52,7 +52,7 @@
                         </div>
                 </div>
 
-                <div class="info-form display-none" id="info-form">
+                <div class="info-form" id="info-form">
                         <h1> Personal Info </h1>
                         <p> Please provide your name, email address and phone number.</p>
                         <form action="">
@@ -155,11 +155,11 @@
 
                         <div class="navigation-buttons">
                                 <button class="nav-button back-button"> Go Back </button>
-                                <button class="nav-button next-button"> Next Step </button>
+                                <button class="nav-button next-button" onclick="addschangeDisplay()"> Next Step </button>
                         </div>                        
                 </div>
 
-                <div class="summary" id="summary">
+                <div class="summary display-none" id="summary">
                         <h1> Finishing Up </h1>
                         <p> Double-check everything looks OK before confirming. </p>
 
@@ -173,7 +173,35 @@
                                                 <h3>$90/yr</h3>
                                         </div>
                                 </div>
+                                <div class="extras-breakdown">
+                                        <div class="extra">
+                                                <div class="detail">
+                                                        <h6>Online Service</h6>
+                                                </div>
+                                                <div class="price">
+                                                        <h6>+$1/mo</h6>
+                                                </div>
+                                        </div>
+                                        <div class="extra">
+                                                <div class="detail">
+                                                        <h6>Larger Storage</h6>
+                                                </div>
+                                                <div class="price">
+                                                        <h6>+$2/mo</h6>
+                                                </div>
+                                        </div>
+                                </div>
                         </div>
+
+                        <div class="additions">
+                                <h6>Total (per month)</h6>
+                                <h1>+$12/mo</h1>
+                        </div>
+
+                        <div class="navigation-buttons">
+                                <button class="nav-button back-button"> Go Back </button>
+                                <button class="nav-button next-button"> Next Step </button>
+                        </div> 
                 </div>
         </div>
 </body>

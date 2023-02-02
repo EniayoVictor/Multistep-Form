@@ -461,3 +461,191 @@ input:checked + .slider:before {
         color: hsl(213, 96%, 18%);
         font-family: "ubuntu-bold";
 }
+
+.extras-breakdown{
+        /* border: 1px solid red; */
+        width: 90%;
+        height: 50%;
+        margin: auto;
+        box-sizing: border-box;
+        padding: 1%;
+        padding-bottom: 0%;
+        align-items: center;
+}
+
+.extras-breakdown .extra{
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40%;
+        /* border: 1px solid purple; */
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 5%;
+        
+}
+
+.extra .detail{
+        width: 92%;
+}
+
+.detail h6{
+        font-size: 14px;
+        color: hsl(229, 15%, 72%);
+        font-family: "ubuntu-regular";
+        font-weight: 400;
+        margin: 0;
+}
+
+.extra .price{
+        width: 30%;
+}
+
+.price h6{
+        font-size: 14px;
+        color: hsl(213, 96%, 18%);
+        font-family: "ubuntu-regular";
+        font-weight: 400;
+        margin: 0;
+}
+
+.additions{
+        display: flex;
+        width: 70%;
+        height: 8%;
+        /* border: 1px solid red; */
+        padding-left: 5%;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 2%;
+}
+
+.additions h6{
+        font-size: 14px;
+        color: hsl(229, 15%, 72%);
+        font-family: "ubuntu-regular";
+        font-weight: 400;
+        margin: 0;
+        width: 65%;
+}
+
+.additions h1{
+        margin: 0;
+        color: hsl(243, 100%, 62%) !important;
+}
+
+.summary .navigation-buttons{
+        width: 70%;
+        height: 8%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 17%;
+}
+
+.summary .navigation-buttons .nav-button{
+        width: 30%;
+        height: 100%;
+        font-size: 14px;
+        font-family: "ubuntu-bold";
+        background: none;
+        color: hsl(229, 15%, 72%);
+        border: none;
+        outline: none;
+        border-radius: 12px;
+}
+
+.summary .navigation-buttons .back-button:hover{
+        color: hsl(213, 96%, 18%);
+}
+
+.summary .navigation-buttons .next-button{
+        background: hsl(213, 96%, 18%);
+}
+
+.summary .navigation-buttons .next-button:hover{
+        background: hsl(243, 100%, 62%);
+        color: hsl(0, 0%, 100%);
+}
+
+.main-card .add-ons{
+        width: 68%;
+        height: 100%;
+        border-radius: 18px;
+        border: 2px solid hsl(217, 100%, 97%);
+        box-sizing: border-box;
+        padding: 1%;
+        padding-left: 3%;
+}
+
+.add-ons h1{
+        font-family: "ubuntu-bold";
+        color: hsl(213, 96%, 18%);
+        margin-bottom: 0;
+        line-height: 180%;
+}
+
+.add-ons p{
+        font-family: "ubuntu-regular";
+        font-size: 14px;
+        color: hsl(229, 15%, 72%);
+        margin-top: 0;
+        margin-bottom: 4%;
+}
+
+.add-ons .add-ons-list{
+        display: flex;
+        width: 75%;
+        height: 15%;
+        align-items: center;
+        border: 1px solid hsl(229, 15%, 72%);
+        margin-bottom: 2%;
+        border-radius: 18px;
+}
+
+.add-ons-list .check{
+        text-align: center;
+        width: 15%;
+}
+
+.add-ons-list .text{
+        width: 70%;
+        line-height: 50%;
+}
+
+.text h3{
+        font-family: "ubuntu-bold";
+        color: hsl(213, 96%, 18%);
+}
+
+.add-ons .navigation-buttons{
+        width: 78%;
+        height: 8%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15%;
+}
+
+.add-ons .navigation-buttons .nav-button{
+        width: 30%;
+        height: 100%;
+        font-size: 14px;
+        font-family: "ubuntu-bold";
+        background: none;
+        color: hsl(229, 15%, 72%);
+        border: none;
+        outline: none;
+        border-radius: 12px;
+}
+
+.add-ons .navigation-buttons .back-button:hover{
+        color: hsl(213, 96%, 18%);
+}
+
+.add-ons .navigation-buttons .next-button{
+        background: hsl(213, 96%, 18%);
+}
+
+.add-ons .navigation-buttons .next-button:hover{
+        background: hsl(243, 100%, 62%);
+        color: hsl(0, 0%, 100%);
+}
